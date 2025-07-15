@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ContactManagementSuite" parallel="false">
+  
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Sign Up Tests">
+        <classes>
+            <class name="tests.SignUpTests"/>
+        </classes>
+    </test>
+
+</suite>

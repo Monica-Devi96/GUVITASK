@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ContactManagementSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Sign Up Tests(failed)">
+    <classes>
+      <class name="tests.SignUpTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testSignUpScenarios" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- tests.SignUpTests -->
+    </classes>
+  </test> <!-- Sign Up Tests(failed) -->
+</suite> <!-- Failed suite [ContactManagementSuite] -->
