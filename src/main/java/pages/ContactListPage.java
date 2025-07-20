@@ -1,8 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -10,58 +8,80 @@ import java.time.Duration;
 import java.util.List;
 
 public class ContactListPage {
-    private WebDriver driver;
-    private WebDriverWait wait;
+	private WebDriver driver;
+	private WebDriverWait wait;
 
-    public ContactListPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
+	public ContactListPage(WebDriver driver) {
+		this.driver = driver;
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	}
 
-    private By tableRows = By.cssSelector("table.contactTable tr.contactTableBodyRow");
+	private By table = By.cssSelector("table.contactTable");
+	private By rows = By.cssSelector("table.contactTable tbody tr");
 
-    public void waitForPage() {
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(tableRows));
-    }
+	public void waitForPage() {
+		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(table));
+	}
 
-    public boolean waitForContact(String fullName) {
-        return wait.until(driver -> {
-            List<WebElement> rows = driver.findElements(tableRows);
-            return rows.stream().anyMatch(row -> row.getText().contains(fullName));
-        });
-    }
+	public boolean isContactPresent(String fullName) {
+		waitForPage();
+		List<WebElement> elements = driver
+				.findElements(By.xpath("//table[contains(@class,'contactTable')]//tr/td[text()='" + fullName + "']"));
+		return !elements.isEmpty();
+	}
 
-    public String getEmailForContact(String fullName) {
-        return getCellValue(fullName, 2);
-    }
+	public void clickContactName(String fullName) {
+		waitForPage();
 
-    public String getPhoneForContact(String fullName) {
-        return getCellValue(fullName, 3);
-    }
+		String xpath = "//table[contains(@class,'contactTable')]//tr/td[text()='" + fullName + "']";
 
-    private String getCellValue(String fullName, int cellIndex) {
-        List<WebElement> rows = driver.findElements(tableRows);
-        for (WebElement row : rows) {
-            if (row.getText().contains(fullName)) {
-                return row.findElements(By.tagName("td")).get(cellIndex).getText();
-            }
-        }
-        return null;
-    }
+		WebElement nameCell = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
 
-    public void clickContactNameToEdit(String fullName) {
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(tableRows));
+		try {
+			nameCell.click();
+		} catch (Exception e) {
+			((JavascriptExecutor) driver).executeScript("arguments[0].click();", nameCell);
+		}
+	}
 
-        List<WebElement> rows = driver.findElements(tableRows);
-        for (WebElement row : rows) {
-            String rowText = row.getText().trim();
-            if (rowText.contains(fullName)) {
-                WebElement nameCell = row.findElement(By.tagName("td"));
-                wait.until(ExpectedConditions.elementToBeClickable(nameCell)).click();
-                return;
-            }
-        }
-        throw new RuntimeException("Contact not found to edit: " + fullName);
-    }
+	public AddContactPage clickAddContact() {
+		By addContactButton = By.id("add-contact");
+		wait.until(ExpectedConditions.elementToBeClickable(addContactButton)).click();
+		return new AddContactPage(driver);
+	}
 
-    }
+	public boolean isContactListDisplayed() {
+		try {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-contact")));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	public String getEmailForContact(String fullName) {
+		waitForPage();
+		String xpath = "//table[contains(@class,'contactTable')]//tr[td[text()='" + fullName + "']]/td[2]";
+		WebElement emailCell = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+		return emailCell.getText().trim();
+	}
+
+	public String getPhoneForContact(String fullName) {
+		waitForPage();
+		String xpath = "//table[contains(@class,'contactTable')]//tr[td[text()='" + fullName + "']]/td[3]";
+		WebElement phoneCell = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+		return phoneCell.getText().trim();
+	}
+
+	public void clickLogout() {
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("logout"))).click();
+	}
+
+	public void waitUntilContactIsDeleted(String fullName) {
+		String xpath = "//table[contains(@class,'contactTable')]//tr/td[normalize-space(text())='" + fullName + "']";
+		new WebDriverWait(driver, Duration.ofSeconds(15))  // increased to 15s
+		    .until(ExpectedConditions.numberOfElementsToBe(By.xpath(xpath), 0));
+	}
+
+
+}

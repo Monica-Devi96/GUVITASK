@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-15T09:23:35 GMT-07:00" name="Default suite" finished-at="2025-07-15T09:24:20 GMT-07:00" duration-ms="45706">
+  <suite started-at="2025-07-20T00:07:47 GMT-07:00" name="Default suite" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="34115">
     <groups>
     </groups>
-    <test started-at="2025-07-15T09:23:35 GMT-07:00" name="Default test" finished-at="2025-07-15T09:24:20 GMT-07:00" duration-ms="45706">
-      <class name="tests.EditContactTests">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:23:34 GMT-07:00" name="setUpReport" finished-at="2025-07-15T09:23:35 GMT-07:00" duration-ms="230" status="PASS">
+    <test started-at="2025-07-20T00:07:47 GMT-07:00" name="Default test" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="34115">
+      <class name="tests.DeleteContactTests">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:46 GMT-07:00" name="setUpReport" finished-at="2025-07-20T00:07:47 GMT-07:00" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:23:35 GMT-07:00" name="setUp" finished-at="2025-07-15T09:23:37 GMT-07:00" duration-ms="1690" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:47 GMT-07:00" name="setUp" finished-at="2025-07-20T00:07:50 GMT-07:00" duration-ms="3051" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,59 +22,78 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:23:37 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-15T09:23:51 GMT-07:00" duration-ms="13809" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:50 GMT-07:00" name="setUp" finished-at="2025-07-20T00:07:52 GMT-07:00" duration-ms="1429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:52 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-20T00:07:54 GMT-07:00" duration-ms="2201" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[John]]>
+                <![CDATA[John Doe]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Doe]]>
+                <![CDATA[check_alert]]>
               </value>
             </param>
-            <param index="2">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:54 GMT-07:00" name="tearDown" finished-at="2025-07-20T00:07:54 GMT-07:00" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:54 GMT-07:00" name="setUp" finished-at="2025-07-20T00:07:57 GMT-07:00" duration-ms="2392" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[john.new@mail.com]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
-            <param index="3">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:57 GMT-07:00" name="setUp" finished-at="2025-07-20T00:07:58 GMT-07:00" duration-ms="1428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:58 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-20T00:08:16 GMT-07:00" duration-ms="17695" status="FAIL">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[1234567890]]>
+                <![CDATA[John Doe]]>
               </value>
             </param>
-            <param index="4">
+            <param index="1">
               <value>
-                <![CDATA[success]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[save]]>
+                <![CDATA[delete_contact]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[[[ChromeDriver: chrome on windows (d18aad786ef5cc7c062a158ff3f5cd96)] -> css selector: table.contactTable tr.contactTableBodyRow]] -> tag name: td] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for number of elements found by By.xpath: //table[contains(@class,'contactTable')]//tr/td[normalize-space(text())='John Doe'] to be "0". Current number: "1" (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64621/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d18aad786ef5cc7c062a158ff3f5cd96]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56371/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a17cfa0797f082b51315f007018b39b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[[[ChromeDriver: chrome on windows (d18aad786ef5cc7c062a158ff3f5cd96)] -> css selector: table.contactTable tr.contactTableBodyRow]] -> tag name: td] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of elements found by By.xpath: //table[contains(@class,'contactTable')]//tr/td[normalize-space(text())='John Doe'] to be "0". Current number: "1" (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64621/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d18aad786ef5cc7c062a158ff3f5cd96
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56371/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a17cfa0797f082b51315f007018b39b
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.ContactListPage.clickContactNameToEdit(ContactListPage.java:60)
-at tests.EditContactTests.testEditContact(EditContactTests.java:50)
+at pages.ContactListPage.waitUntilContactIsDeleted(ContactListPage.java:83)
+at tests.DeleteContactTests.testDeleteContact(DeleteContactTests.java:103)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,12 +127,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEditContact -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:23:51 GMT-07:00" name="tearDown" finished-at="2025-07-15T09:23:51 GMT-07:00" duration-ms="165" status="PASS">
+        </test-method> <!-- testDeleteContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:16 GMT-07:00" name="tearDown" finished-at="2025-07-20T00:08:16 GMT-07:00" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:23:51 GMT-07:00" name="setUp" finished-at="2025-07-15T09:23:52 GMT-07:00" duration-ms="1064" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:16 GMT-07:00" name="setUp" finished-at="2025-07-20T00:08:18 GMT-07:00" duration-ms="2291" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,59 +143,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:23:52 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-15T09:24:06 GMT-07:00" duration-ms="13706" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:18 GMT-07:00" name="setUp" finished-at="2025-07-20T00:08:19 GMT-07:00" duration-ms="1303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:19 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="1186" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Jane]]>
+                <![CDATA[John Doe]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Smith]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[jane.new@mail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2147483647]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[success]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cancel]]>
+                <![CDATA[verify_deleted]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[[[ChromeDriver: chrome on windows (63855c8b8ab9396762a2f58c0472b1b1)] -> css selector: table.contactTable tr.contactTableBodyRow]] -> tag name: td] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64656/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 63855c8b8ab9396762a2f58c0472b1b1]]>
+              <![CDATA[Contact is still present in table: John Doe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[[[ChromeDriver: chrome on windows (63855c8b8ab9396762a2f58c0472b1b1)] -> css selector: table.contactTable tr.contactTableBodyRow]] -> tag name: td] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64656/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 63855c8b8ab9396762a2f58c0472b1b1
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.ContactListPage.clickContactNameToEdit(ContactListPage.java:60)
-at tests.EditContactTests.testEditContact(EditContactTests.java:50)
+              <![CDATA[java.lang.AssertionError: Contact is still present in table: John Doe
+at org.testng.Assert.fail(Assert.java:111)
+at tests.DeleteContactTests.testDeleteContact(DeleteContactTests.java:118)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -207,121 +198,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEditContact -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:24:06 GMT-07:00" name="tearDown" finished-at="2025-07-15T09:24:06 GMT-07:00" duration-ms="113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:24:06 GMT-07:00" name="setUp" finished-at="2025-07-15T09:24:07 GMT-07:00" duration-ms="1065" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:24:07 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-15T09:24:20 GMT-07:00" duration-ms="13232" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Alice]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Brown]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[alice@mail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2147483647]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Last Name is required]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[validate]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[[[ChromeDriver: chrome on windows (be53a12d2e0420610785fa6f4e1185de)] -> css selector: table.contactTable tr.contactTableBodyRow]] -> tag name: td] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64688/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be53a12d2e0420610785fa6f4e1185de]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[[[ChromeDriver: chrome on windows (be53a12d2e0420610785fa6f4e1185de)] -> css selector: table.contactTable tr.contactTableBodyRow]] -> tag name: td] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64688/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be53a12d2e0420610785fa6f4e1185de
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.ContactListPage.clickContactNameToEdit(ContactListPage.java:60)
-at tests.EditContactTests.testEditContact(EditContactTests.java:50)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEditContact -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:24:20 GMT-07:00" name="tearDown" finished-at="2025-07-15T09:24:20 GMT-07:00" duration-ms="152" status="PASS">
+        </test-method> <!-- testDeleteContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:21 GMT-07:00" name="tearDown" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.EditContactTests@4ebea12c]" started-at="2025-07-15T09:24:20 GMT-07:00" name="tearDownReport" finished-at="2025-07-15T09:24:21 GMT-07:00" duration-ms="315" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:21 GMT-07:00" name="tearDownReport" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- tests.EditContactTests -->
+      </class> <!-- tests.DeleteContactTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

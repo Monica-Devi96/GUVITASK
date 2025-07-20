@@ -34,7 +34,7 @@ public class AddContactTests extends BaseTest {
         ExtentTest test = extent.createTest("Add Contact Test - " + firstName + " " + lastName);
 
         try {
-            login();
+            logintoAdd();
 
             ContactListPage listPage = new ContactListPage(driver);
             listPage.clickAddContact();
@@ -69,7 +69,7 @@ public class AddContactTests extends BaseTest {
         }
     }
 
-    private void login() {
+    private void logintoAdd() {
         driver.get("https://thinking-tester-contact-list.herokuapp.com/");
         driver.findElement(By.id("email")).sendKeys("chitturaju96@gmail.com");
         driver.findElement(By.id("password")).sendKeys("chitturaju");
@@ -79,9 +79,4 @@ public class AddContactTests extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id("add-contact")));
     }
 }
-public AddContactPage clickAddContact() {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	By addContactButton = By.id("add-contact");
-	wait.until(ExpectedConditions.elementToBeClickable(addContactButton)).click();
-	return new AddContactPage(driver);
-}
+

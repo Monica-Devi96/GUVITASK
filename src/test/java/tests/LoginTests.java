@@ -2,7 +2,10 @@ package tests;
 
 import base.BaseTest;
 import com.aventstack.extentreports.ExtentTest;
+
+import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -10,7 +13,8 @@ import utils.ConfigReader;
 import utils.ExcelUtils;
 
 public class LoginTests extends BaseTest {
-
+	
+	
     @DataProvider(name = "loginData")
     public Object[][] getLoginData() {
         String filePath = getClass().getClassLoader()
@@ -18,7 +22,7 @@ public class LoginTests extends BaseTest {
                 .getPath();
         return ExcelUtils.getSheetData(filePath, "LoginData");
     }
-
+    
     @Test(dataProvider = "loginData")
     public void testLoginScenarios(String email, String password, String expectedResult) {
     	String baseUrl = ConfigReader.get("base.url");
@@ -60,4 +64,12 @@ public class LoginTests extends BaseTest {
             throw e;
         }
     }
+    protected void login() {
+        driver.get("https://thinking-tester-contact-list.herokuapp.com/");
+        driver.findElement(By.id("email")).sendKeys("chitturaju96@gmail.com");
+        driver.findElement(By.id("password")).sendKeys("chitturaju");
+        driver.findElement(By.id("submit")).click();
+
+    }
+
 }

@@ -4,11 +4,19 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import org.openqa.selenium.WebDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 public class BaseTest {
@@ -29,22 +37,40 @@ public class BaseTest {
         extent.setSystemInfo("Tester", "Automation Framework");
     }
 
-    @Parameters({"browser"})
     @BeforeMethod
+    @Parameters("browser")
     public void setUp(@Optional("chrome") String browser) {
-        if (browser.equalsIgnoreCase("chrome")) {
-            driver = new ChromeDriver();
-        } else if (browser.equalsIgnoreCase("firefox")) {
-            driver = new FirefoxDriver();
-        } else {
-            throw new IllegalArgumentException("Browser \"" + browser + "\" not supported.");
-        }
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
+        driver = initializeDriver(browser);
+        
+    }
+    public WebDriver initializeDriver() {
+        return initializeDriver("chrome");
     }
 
-    @AfterMethod
+
+    public WebDriver initializeDriver(String browser) {
+        WebDriver driver;
+
+        if (browser.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
+
+        } else {
+            throw new IllegalArgumentException("Unsupported browser: " + browser);
+        }
+
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get("https://thinking-tester-contact-list.herokuapp.com/"); 
+
+        return driver;
+    }
+
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {
             driver.quit();
@@ -65,5 +91,15 @@ public class BaseTest {
     protected void createTest(String testName) {
         ExtentTest extentTest = extent.createTest(testName);
         test.set(extentTest);
+    }
+   
+
+    public void takeScreenshot(String fileName) {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(src, new File("./test-output/screenshots/" + fileName));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
