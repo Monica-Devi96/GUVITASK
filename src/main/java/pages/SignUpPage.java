@@ -16,7 +16,6 @@ public class SignUpPage {
         this.driver = driver;
     }
 
-    // Locators
     private By linkSignUp = By.id("signup");
     private By inputFirstName = By.id("firstName");
     private By inputLastName = By.id("lastName");
@@ -52,6 +51,5 @@ public class SignUpPage {
         driver.findElement(btnSignUp).click();
     }
     
-
 
 }

@@ -23,12 +23,11 @@ public class ContactListPage {
 		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(table));
 	}
 
-	public boolean isContactPresent(String fullName) {
-		waitForPage();
-		List<WebElement> elements = driver
-				.findElements(By.xpath("//table[contains(@class,'contactTable')]//tr/td[text()='" + fullName + "']"));
-		return !elements.isEmpty();
+	public boolean isContactPresent(String name) {
+	    return driver.findElements(
+	            By.xpath("//table[contains(@class,'contactTable')]//tr[td[normalize-space()='" + name + "']]")).size() > 0;
 	}
+
 
 	public void clickContactName(String fullName) {
 		waitForPage();
@@ -77,11 +76,14 @@ public class ContactListPage {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("logout"))).click();
 	}
 
-	public void waitUntilContactIsDeleted(String fullName) {
-		String xpath = "//table[contains(@class,'contactTable')]//tr/td[normalize-space(text())='" + fullName + "']";
-		new WebDriverWait(driver, Duration.ofSeconds(15))  // increased to 15s
-		    .until(ExpectedConditions.numberOfElementsToBe(By.xpath(xpath), 0));
+	public void waitUntilContactIsDeleted(String name) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	    wait.until(driver -> driver.findElements(
+	        By.xpath("//table[contains(@class,'contactTable')]//tr[td[normalize-space()='" + name + "']]"))
+	        .isEmpty());
 	}
+
+
 
 
 }

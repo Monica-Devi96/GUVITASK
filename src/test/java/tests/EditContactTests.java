@@ -44,7 +44,7 @@ public class EditContactTests extends BaseTest {
 		EditContactPage editPage = new EditContactPage(driver);
 		editPage.waitForPage();
 
-		// Read original values
+		
 		String originalEmail = editPage.getCurrentEmail();
 		String originalPhone = editPage.getCurrentPhone();
 

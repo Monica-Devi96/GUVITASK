@@ -17,7 +17,7 @@ public class DeleteContactPage {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
-	// If the delete button ID ever changes, you can use a fallback XPath
+	
 	private final By deleteBtn = By.id("delete");
 
 	public void waitForPage() {
@@ -29,7 +29,7 @@ public class DeleteContactPage {
 		btn.click();
 	}
 
-	// Optional: generic click by button name (if page has other buttons)
+
 	public void clickButtonByText(String buttonText) {
 		String xpath = "//button[normalize-space()='" + buttonText + "']";
 		WebElement btn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));

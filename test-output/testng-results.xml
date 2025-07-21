@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="50" passed="49" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-20T00:07:47 GMT-07:00" name="Default suite" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="34115">
+  <suite started-at="2025-07-21T13:37:08 GMT-07:00" name="ContactManagementAutomationSuite" finished-at="2025-07-21T13:40:50 GMT-07:00" duration-ms="221964">
     <groups>
     </groups>
-    <test started-at="2025-07-20T00:07:47 GMT-07:00" name="Default test" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="34115">
-      <class name="tests.DeleteContactTests">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:46 GMT-07:00" name="setUpReport" finished-at="2025-07-20T00:07:47 GMT-07:00" duration-ms="198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:47 GMT-07:00" name="setUp" finished-at="2025-07-20T00:07:50 GMT-07:00" duration-ms="3051" status="PASS">
+    <test started-at="2025-07-21T13:37:08 GMT-07:00" name="Chrome Tests" finished-at="2025-07-21T13:40:35 GMT-07:00" duration-ms="207859">
+      <class name="tests.LoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:31 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:33 GMT-07:00" duration-ms="2361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +18,517 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:50 GMT-07:00" name="setUp" finished-at="2025-07-20T00:07:52 GMT-07:00" duration-ms="1429" status="PASS">
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:33 GMT-07:00" name="testLoginScenarios" data-provider="loginData" finished-at="2025-07-21T13:39:35 GMT-07:00" duration-ms="2243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chitturaju96@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chitturaju]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:35 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:35 GMT-07:00" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:35 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:38 GMT-07:00" duration-ms="2435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:52 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-20T00:07:54 GMT-07:00" duration-ms="2201" status="PASS">
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:38 GMT-07:00" name="testLoginScenarios" data-provider="loginData" finished-at="2025-07-21T13:39:39 GMT-07:00" duration-ms="1676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WrongPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Incorrect username or password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:39 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:40 GMT-07:00" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:40 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:42 GMT-07:00" duration-ms="2415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:42 GMT-07:00" name="testLoginScenarios" data-provider="loginData" finished-at="2025-07-21T13:39:44 GMT-07:00" duration-ms="1982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Incorrect username or password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:44 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:44 GMT-07:00" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:44 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:46 GMT-07:00" duration-ms="2368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:46 GMT-07:00" name="testLoginScenarios" data-provider="loginData" finished-at="2025-07-21T13:39:48 GMT-07:00" duration-ms="1976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Incorrect username or password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:39:48 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:49 GMT-07:00" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:40:08 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:11 GMT-07:00" duration-ms="2379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPasswordIsMasked()[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:40:11 GMT-07:00" name="verifyPasswordIsMasked" finished-at="2025-07-21T13:40:11 GMT-07:00" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordIsMasked -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@649725e3]" started-at="2025-07-21T13:40:11 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:11 GMT-07:00" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.EditContactTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:38:42 GMT-07:00" name="setUp" finished-at="2025-07-21T13:38:45 GMT-07:00" duration-ms="2735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:38:45 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-21T13:38:57 GMT-07:00" duration-ms="11445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane.new@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Validation failed]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[validate]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:38:57 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:38:57 GMT-07:00" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:38:57 GMT-07:00" name="setUp" finished-at="2025-07-21T13:38:59 GMT-07:00" duration-ms="2376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:38:59 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-21T13:39:13 GMT-07:00" duration-ms="13944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane.new@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cancel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:39:13 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:13 GMT-07:00" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:39:13 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:16 GMT-07:00" duration-ms="2416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:39:16 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-21T13:39:30 GMT-07:00" duration-ms="14693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane.new@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[save]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@4eed46ee]" started-at="2025-07-21T13:39:30 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:30 GMT-07:00" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.EditContactTests -->
+      <class name="tests.SignUpTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:39:49 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:51 GMT-07:00" duration-ms="2240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:39:51 GMT-07:00" name="testSignUpScenarios" data-provider="signUpData" finished-at="2025-07-21T13:39:54 GMT-07:00" duration-ms="2942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[john7645@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password123!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:39:54 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:54 GMT-07:00" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:39:54 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:56 GMT-07:00" duration-ms="2427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:39:56 GMT-07:00" name="testSignUpScenarios" data-provider="signUpData" finished-at="2025-07-21T13:39:59 GMT-07:00" duration-ms="2329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Monica]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Devi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chitturaju96@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password123!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Email address is already in use]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:39:59 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:59 GMT-07:00" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:39:59 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:01 GMT-07:00" duration-ms="2219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:40:01 GMT-07:00" name="testSignUpScenarios" data-provider="signUpData" finished-at="2025-07-21T13:40:03 GMT-07:00" duration-ms="2255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:40:03 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:03 GMT-07:00" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:40:03 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:06 GMT-07:00" duration-ms="2440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:40:06 GMT-07:00" name="testSignUpScenarios" data-provider="signUpData" finished-at="2025-07-21T13:40:08 GMT-07:00" duration-ms="2372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tyson]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pass123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SignUpTests@52b56a3e]" started-at="2025-07-21T13:40:08 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:08 GMT-07:00" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SignUpTests -->
+      <class name="tests.DeleteContactTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:37:47 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:50 GMT-07:00" duration-ms="2483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:37:50 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:51 GMT-07:00" duration-ms="1571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:37:51 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-21T13:37:54 GMT-07:00" duration-ms="2402" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,11 +544,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteContact -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:54 GMT-07:00" name="tearDown" finished-at="2025-07-20T00:07:54 GMT-07:00" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:37:54 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:54 GMT-07:00" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:54 GMT-07:00" name="setUp" finished-at="2025-07-20T00:07:57 GMT-07:00" duration-ms="2392" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:37:54 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:56 GMT-07:00" duration-ms="2181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,11 +559,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:57 GMT-07:00" name="setUp" finished-at="2025-07-20T00:07:58 GMT-07:00" duration-ms="1428" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:37:56 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:58 GMT-07:00" duration-ms="1878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:07:58 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-20T00:08:16 GMT-07:00" duration-ms="17695" status="FAIL">
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:37:58 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-21T13:38:27 GMT-07:00" duration-ms="28592" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,65 +576,14 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for number of elements found by By.xpath: //table[contains(@class,'contactTable')]//tr/td[normalize-space(text())='John Doe'] to be "0". Current number: "1" (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56371/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6a17cfa0797f082b51315f007018b39b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of elements found by By.xpath: //table[contains(@class,'contactTable')]//tr/td[normalize-space(text())='John Doe'] to be "0". Current number: "1" (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56371/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6a17cfa0797f082b51315f007018b39b
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.ContactListPage.waitUntilContactIsDeleted(ContactListPage.java:83)
-at tests.DeleteContactTests.testDeleteContact(DeleteContactTests.java:103)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteContact -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:16 GMT-07:00" name="tearDown" finished-at="2025-07-20T00:08:16 GMT-07:00" duration-ms="163" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:38:27 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:38:27 GMT-07:00" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:16 GMT-07:00" name="setUp" finished-at="2025-07-20T00:08:18 GMT-07:00" duration-ms="2291" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:38:27 GMT-07:00" name="setUp" finished-at="2025-07-21T13:38:29 GMT-07:00" duration-ms="2554" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,11 +594,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:18 GMT-07:00" name="setUp" finished-at="2025-07-20T00:08:19 GMT-07:00" duration-ms="1303" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:38:29 GMT-07:00" name="setUp" finished-at="2025-07-21T13:38:31 GMT-07:00" duration-ms="1431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:19 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="1186" status="FAIL">
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:38:31 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-21T13:38:42 GMT-07:00" duration-ms="11326" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,14 +611,732 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@36b0fcd5]" started-at="2025-07-21T13:38:42 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:38:42 GMT-07:00" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DeleteContactTests -->
+      <class name="tests.AddContactTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:08 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:12 GMT-07:00" duration-ms="3657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:12 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:16 GMT-07:00" duration-ms="4373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[john@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:16 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:17 GMT-07:00" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:17 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:20 GMT-07:00" duration-ms="3360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:20 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:24 GMT-07:00" duration-ms="4407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[blankfn@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Contact validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:24 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:25 GMT-07:00" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:25 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:27 GMT-07:00" duration-ms="2865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:27 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:32 GMT-07:00" duration-ms="4781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[blankln@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Contact validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:32 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:32 GMT-07:00" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:32 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:35 GMT-07:00" duration-ms="2293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:35 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:40 GMT-07:00" duration-ms="5174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Contact validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:40 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:40 GMT-07:00" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:40 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:42 GMT-07:00" duration-ms="2054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:42 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:47 GMT-07:00" duration-ms="5159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@fd0e5b6]" started-at="2025-07-21T13:37:47 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:47 GMT-07:00" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AddContactTests -->
+      <class name="tests.SessionManagementTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:11 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:14 GMT-07:00" duration-ms="2970" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogoutRedirectsToLogin()[pri:1, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:14 GMT-07:00" name="testLogoutRedirectsToLogin" finished-at="2025-07-21T13:40:16 GMT-07:00" duration-ms="2536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutRedirectsToLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:16 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:17 GMT-07:00" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:17 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:19 GMT-07:00" duration-ms="2434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginStateOnRefresh()[pri:2, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:19 GMT-07:00" name="testLoginStateOnRefresh" finished-at="2025-07-21T13:40:21 GMT-07:00" duration-ms="2306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginStateOnRefresh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:21 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:21 GMT-07:00" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:21 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:24 GMT-07:00" duration-ms="2398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginRequiredForContactList()[pri:3, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:24 GMT-07:00" name="testLoginRequiredForContactList" finished-at="2025-07-21T13:40:24 GMT-07:00" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginRequiredForContactList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:24 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:25 GMT-07:00" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:25 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:27 GMT-07:00" duration-ms="2437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBackButtonAfterLogout()[pri:4, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:27 GMT-07:00" name="testBackButtonAfterLogout" finished-at="2025-07-21T13:40:30 GMT-07:00" duration-ms="2622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackButtonAfterLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:30 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:30 GMT-07:00" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:30 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:32 GMT-07:00" duration-ms="2532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testContactFormAlignment()[pri:5, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:32 GMT-07:00" name="testContactFormAlignment" finished-at="2025-07-21T13:40:35 GMT-07:00" duration-ms="2851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactFormAlignment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@3d8bbcdc]" started-at="2025-07-21T13:40:35 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:35 GMT-07:00" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SessionManagementTests -->
+    </test> <!-- Chrome Tests -->
+    <test started-at="2025-07-21T13:37:08 GMT-07:00" name="Edge Tests" finished-at="2025-07-21T13:40:50 GMT-07:00" duration-ms="221964">
+      <class name="tests.LoginTests">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:37:07 GMT-07:00" name="setUpReport" finished-at="2025-07-21T13:37:08 GMT-07:00" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:33 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:35 GMT-07:00" duration-ms="2385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:35 GMT-07:00" name="testLoginScenarios" data-provider="loginData" finished-at="2025-07-21T13:39:38 GMT-07:00" duration-ms="2044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chitturaju96@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chitturaju]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:38 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:38 GMT-07:00" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:38 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:40 GMT-07:00" duration-ms="2525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:40 GMT-07:00" name="testLoginScenarios" data-provider="loginData" finished-at="2025-07-21T13:39:42 GMT-07:00" duration-ms="1567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WrongPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Incorrect username or password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:42 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:42 GMT-07:00" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:42 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:45 GMT-07:00" duration-ms="2700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:45 GMT-07:00" name="testLoginScenarios" data-provider="loginData" finished-at="2025-07-21T13:39:46 GMT-07:00" duration-ms="1481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Incorrect username or password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:46 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:46 GMT-07:00" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:46 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:50 GMT-07:00" duration-ms="3392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:50 GMT-07:00" name="testLoginScenarios" data-provider="loginData" finished-at="2025-07-21T13:39:51 GMT-07:00" duration-ms="1519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Incorrect username or password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:39:51 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:51 GMT-07:00" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:40:23 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:25 GMT-07:00" duration-ms="2615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPasswordIsMasked()[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:40:25 GMT-07:00" name="verifyPasswordIsMasked" finished-at="2025-07-21T13:40:25 GMT-07:00" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordIsMasked -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:40:25 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:26 GMT-07:00" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.LoginTests@35fe2125]" started-at="2025-07-21T13:40:50 GMT-07:00" name="tearDownReport" finished-at="2025-07-21T13:40:50 GMT-07:00" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.EditContactTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:38:44 GMT-07:00" name="setUp" finished-at="2025-07-21T13:38:46 GMT-07:00" duration-ms="2668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:38:46 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-21T13:38:59 GMT-07:00" duration-ms="12139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane.new@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Validation failed]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[validate]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:38:59 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:38:59 GMT-07:00" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:38:59 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:01 GMT-07:00" duration-ms="2590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:39:01 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-21T13:39:16 GMT-07:00" duration-ms="14839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane.new@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cancel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:39:16 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:16 GMT-07:00" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:39:16 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:19 GMT-07:00" duration-ms="2260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEditContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:39:19 GMT-07:00" name="testEditContact" data-provider="editData" finished-at="2025-07-21T13:39:33 GMT-07:00" duration-ms="14161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane.new@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[save]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EditContactTests@2484f433]" started-at="2025-07-21T13:39:33 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:39:33 GMT-07:00" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.EditContactTests -->
+      <class name="tests.SignUpTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:39:51 GMT-07:00" name="setUp" finished-at="2025-07-21T13:39:54 GMT-07:00" duration-ms="2681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:39:54 GMT-07:00" name="testSignUpScenarios" data-provider="signUpData" finished-at="2025-07-21T13:40:06 GMT-07:00" duration-ms="11775" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[john7645@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password123!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Contact is still present in table: John Doe]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: add-contact (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.95, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52326}, msedge: {msedgedriverVersion: 138.0.3351.95 (b095f7295f46..., userDataDir: C:\Users\smart\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52326/devtoo..., se:cdpVersion: 138.0.3351.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e0f1c78d8cc8d90cae7d8a8455520e1e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Contact is still present in table: John Doe
-at org.testng.Assert.fail(Assert.java:111)
-at tests.DeleteContactTests.testDeleteContact(DeleteContactTests.java:118)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: add-contact (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.95, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52326}, msedge: {msedgedriverVersion: 138.0.3351.95 (b095f7295f46..., userDataDir: C:\Users\smart\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52326/devtoo..., se:cdpVersion: 138.0.3351.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e0f1c78d8cc8d90cae7d8a8455520e1e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at tests.SignUpTests.testSignUpScenarios(SignUpTests.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,33 +1353,597 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteContact -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:21 GMT-07:00" name="tearDown" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="128" status="PASS">
+        </test-method> <!-- testSignUpScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:06 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:06 GMT-07:00" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.DeleteContactTests@6256ac4f]" started-at="2025-07-20T00:08:21 GMT-07:00" name="tearDownReport" finished-at="2025-07-20T00:08:21 GMT-07:00" duration-ms="310" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:06 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:09 GMT-07:00" duration-ms="2463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownReport -->
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:09 GMT-07:00" name="testSignUpScenarios" data-provider="signUpData" finished-at="2025-07-21T13:40:11 GMT-07:00" duration-ms="2496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Monica]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Devi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chitturaju96@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password123!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Email address is already in use]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:11 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:11 GMT-07:00" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:11 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:15 GMT-07:00" duration-ms="3524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:15 GMT-07:00" name="testSignUpScenarios" data-provider="signUpData" finished-at="2025-07-21T13:40:17 GMT-07:00" duration-ms="2280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:17 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:18 GMT-07:00" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:18 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:20 GMT-07:00" duration-ms="2415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:20 GMT-07:00" name="testSignUpScenarios" data-provider="signUpData" finished-at="2025-07-21T13:40:23 GMT-07:00" duration-ms="2562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tyson]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pass123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SignUpTests@94f6bfb]" started-at="2025-07-21T13:40:23 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:23 GMT-07:00" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SignUpTests -->
+      <class name="tests.DeleteContactTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:37:49 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:51 GMT-07:00" duration-ms="2597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:37:51 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:53 GMT-07:00" duration-ms="1494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:37:53 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-21T13:37:56 GMT-07:00" duration-ms="2828" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[check_alert]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:37:56 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:56 GMT-07:00" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:37:56 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:58 GMT-07:00" duration-ms="2482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:37:58 GMT-07:00" name="setUp" finished-at="2025-07-21T13:38:00 GMT-07:00" duration-ms="1487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:38:00 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-21T13:38:28 GMT-07:00" duration-ms="28245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[delete_contact]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:38:28 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:38:28 GMT-07:00" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:38:28 GMT-07:00" name="setUp" finished-at="2025-07-21T13:38:31 GMT-07:00" duration-ms="2674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:38:31 GMT-07:00" name="setUp" finished-at="2025-07-21T13:38:32 GMT-07:00" duration-ms="1494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteContact(java.lang.String,java.lang.String)[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:38:32 GMT-07:00" name="testDeleteContact" data-provider="deleteData" finished-at="2025-07-21T13:38:44 GMT-07:00" duration-ms="11310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[verify_deleted]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteContactTests@60b71e8f]" started-at="2025-07-21T13:38:44 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:38:44 GMT-07:00" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.DeleteContactTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="tests.AddContactTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:08 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:12 GMT-07:00" duration-ms="3626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:12 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:17 GMT-07:00" duration-ms="4581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[john@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:17 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:17 GMT-07:00" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:17 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:20 GMT-07:00" duration-ms="3351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:20 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:25 GMT-07:00" duration-ms="4539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[blankfn@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Contact validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:25 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:25 GMT-07:00" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:25 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:28 GMT-07:00" duration-ms="3022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:28 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:33 GMT-07:00" duration-ms="5046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[blankln@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Contact validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:33 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:33 GMT-07:00" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:33 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:36 GMT-07:00" duration-ms="2669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:36 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:41 GMT-07:00" duration-ms="4896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Contact validation failed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:41 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:41 GMT-07:00" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:41 GMT-07:00" name="setUp" finished-at="2025-07-21T13:37:44 GMT-07:00" duration-ms="2455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:44 GMT-07:00" name="testAddContactScenarios" data-provider="addContactData" finished-at="2025-07-21T13:37:48 GMT-07:00" duration-ms="4833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddContactTests@34645867]" started-at="2025-07-21T13:37:48 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:37:49 GMT-07:00" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AddContactTests -->
+      <class name="tests.SessionManagementTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:26 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:28 GMT-07:00" duration-ms="2393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogoutRedirectsToLogin()[pri:1, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:28 GMT-07:00" name="testLogoutRedirectsToLogin" finished-at="2025-07-21T13:40:31 GMT-07:00" duration-ms="2587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutRedirectsToLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:31 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:31 GMT-07:00" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:31 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:33 GMT-07:00" duration-ms="2519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginStateOnRefresh()[pri:2, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:33 GMT-07:00" name="testLoginStateOnRefresh" finished-at="2025-07-21T13:40:36 GMT-07:00" duration-ms="2269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginStateOnRefresh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:36 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:36 GMT-07:00" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:36 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:38 GMT-07:00" duration-ms="2332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginRequiredForContactList()[pri:3, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:38 GMT-07:00" name="testLoginRequiredForContactList" finished-at="2025-07-21T13:40:39 GMT-07:00" duration-ms="577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginRequiredForContactList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:39 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:39 GMT-07:00" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:39 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:42 GMT-07:00" duration-ms="2585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBackButtonAfterLogout()[pri:4, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:42 GMT-07:00" name="testBackButtonAfterLogout" finished-at="2025-07-21T13:40:44 GMT-07:00" duration-ms="2448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackButtonAfterLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:44 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:44 GMT-07:00" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:44 GMT-07:00" name="setUp" finished-at="2025-07-21T13:40:47 GMT-07:00" duration-ms="2528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testContactFormAlignment()[pri:5, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:47 GMT-07:00" name="testContactFormAlignment" finished-at="2025-07-21T13:40:49 GMT-07:00" duration-ms="2689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactFormAlignment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SessionManagementTests@1255b1d1]" started-at="2025-07-21T13:40:49 GMT-07:00" name="tearDown" finished-at="2025-07-21T13:40:50 GMT-07:00" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SessionManagementTests -->
+    </test> <!-- Edge Tests -->
+  </suite> <!-- ContactManagementAutomationSuite -->
 </testng-results>

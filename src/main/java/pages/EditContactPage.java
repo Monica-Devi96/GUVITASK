@@ -26,7 +26,7 @@ public class EditContactPage {
     private By editContactButton = By.id("edit-contact");
     private By returnButton = By.id("return");
     
-    // Read-only spans
+    
     private By currentEmail = By.id("email");
     private By currentPhone = By.id("phone");
 
@@ -46,7 +46,7 @@ public class EditContactPage {
 
 
     public void waitForEditableFields() {
-        // Wait for the LastName input to be enabled
+        
         wait.until(driver -> {
             WebElement lastName = driver.findElement(lastNameField);
             return lastName.isDisplayed() && lastName.isEnabled();

@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [ContactManagementAutomationSuite]">
-  <test thread-count="2" parallel="tests" name="Chrome Tests(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="2" parallel="tests" name="Edge Tests(failed)">
+    <parameter name="browser" value="edge"/>
     <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/"/>
     <classes>
-      <class name="tests.DeleteContactTests">
+      <class name="tests.SignUpTests">
         <methods>
           <include name="setUp"/>
-          <include name="testDeleteContact" invocation-numbers="2"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="testSignUpScenarios" invocation-numbers="0"/>
           <include name="tearDownReport"/>
           <include name="setUpReport"/>
         </methods>
-      </class> <!-- tests.DeleteContactTests -->
+      </class> <!-- tests.SignUpTests -->
     </classes>
-  </test> <!-- Chrome Tests(failed) -->
+  </test> <!-- Edge Tests(failed) -->
 </suite> <!-- Failed suite [ContactManagementAutomationSuite] -->

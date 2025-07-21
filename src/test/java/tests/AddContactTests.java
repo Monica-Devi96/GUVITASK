@@ -49,13 +49,13 @@ public class AddContactTests extends BaseTest {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
             if (expectedResult.equalsIgnoreCase("success")) {
-                // Wait until URL contains /contactList
+               
                 boolean isOnContactListPage = wait.until(ExpectedConditions.urlContains("/contactList"));
                 Assert.assertTrue(isOnContactListPage, "Did not navigate to contact list page after adding contact.");
 
                 test.pass("Successfully added contact: " + firstName + " " + lastName);
             } else {
-                // Wait until error message is visible and verify
+               
                 String actualError = addPage.waitForErrorMessage();
                 Assert.assertTrue(actualError.contains(expectedResult),
                         "Expected error: " + expectedResult + " but got: " + actualError);

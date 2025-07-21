@@ -16,15 +16,12 @@ import utils.ConfigReader;
 import utils.ExcelUtils;
 
 import java.time.Duration;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class DeleteContactTests extends BaseTest {
 
     @BeforeMethod
     public void setUp() {
-      //  initializeDriver(); // implemented in BaseTest
         driver.get(ConfigReader.get("base.url"));
         loginValid();
     }
@@ -44,7 +41,6 @@ public class DeleteContactTests extends BaseTest {
 
     @Test(dataProvider = "deleteData")
     public void testDeleteContact(String contactName, String scenarioType) {
-
         ExtentTest test = extent.createTest("Delete Contact Test - " + contactName + " - " + scenarioType);
 
         try {
@@ -56,6 +52,7 @@ public class DeleteContactTests extends BaseTest {
                 case "check_alert": {
                     Assert.assertTrue(contactListPage.isContactPresent(contactName),
                             "Contact should exist before deletion");
+
                     contactListPage.clickContactName(contactName);
 
                     DeleteContactPage detailsPage = new DeleteContactPage(driver);
@@ -63,52 +60,50 @@ public class DeleteContactTests extends BaseTest {
                     detailsPage.clickDelete();
 
                     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-                    Alert alert1 = wait.until(ExpectedConditions.alertIsPresent());
-                    Assert.assertTrue(alert1.getText().toLowerCase().contains("delete"),
+                    Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+                    Assert.assertTrue(alert.getText().toLowerCase().contains("delete"),
                             "Alert text is missing");
-                    alert1.dismiss(); // don’t delete, just dismiss
-                    test.pass("Alert appeared and dismissed when Delete clicked: " + contactName);
+                    alert.dismiss(); // dismiss alert
+                    test.pass("Alert appeared and dismissed: " + contactName);
                     break;
                 }
 
                 case "delete_contact": {
                     contactListPage.waitForPage();
+
                     Assert.assertTrue(contactListPage.isContactPresent(contactName),
                             "Contact should exist before deletion");
 
-                    // Get all contact elements with the same name
-                    List<WebElement> contactElements = driver.findElements(
-                            By.xpath("//table//td[text()='" + contactName + "']"));
+                    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+                    while (contactListPage.isContactPresent(contactName)) {
+                 
+                        List<WebElement> contactRows = driver.findElements(
+                                By.xpath("//table[contains(@class,'contactTable')]//tr[td[normalize-space()='" + contactName + "']]"));
 
-                    // Use a Set to keep only unique text
-                    Set<String> uniqueContacts = new HashSet<>();
-                    for (WebElement el : contactElements) {
-                        uniqueContacts.add(el.getText().trim());
-                    }
+                        if (contactRows.isEmpty()) {
+                            break; 
+                        }
 
-                    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-                    for (String uniqueName : uniqueContacts) {
-                        // Find *one* row with this name and click it
-                        WebElement contactRow = driver.findElement(
-                                By.xpath("//table//td[text()='" + uniqueName + "']"));
-                        contactRow.click();
+                        
+                        contactRows.get(0).click();
 
                         DeleteContactPage detailsPage = new DeleteContactPage(driver);
                         detailsPage.waitForPage();
                         detailsPage.clickDelete();
 
-                        Alert alert2 = wait.until(ExpectedConditions.alertIsPresent());
-                        alert2.accept();
-                        contactListPage.waitUntilContactIsDeleted(uniqueName);
-
+                        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+                        alert.accept();
 
                         contactListPage.waitForPage();
                     }
 
-                    test.pass("Deleted all unique instances of contact: " + contactName);
+                    
+                    Assert.assertFalse(contactListPage.isContactPresent(contactName),
+                            "Contact still present even after attempting to delete all.");
+                    test.pass("Deleted all occurrences of contact: " + contactName);
                     break;
                 }
+
 
                 case "verify_deleted": {
                     contactListPage.waitForPage();
@@ -136,5 +131,4 @@ public class DeleteContactTests extends BaseTest {
         driver.findElement(By.id("password")).sendKeys("chitturaju");
         driver.findElement(By.id("submit")).click();
     }
-
 }

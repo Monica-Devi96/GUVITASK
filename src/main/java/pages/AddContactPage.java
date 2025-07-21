@@ -21,7 +21,7 @@ public class AddContactPage {
     private By emailInput = By.id("email");
     private By phoneInput = By.id("phone");
     private By submitBtn = By.id("submit");
-    private By cancelBtn = By.id("cancel");  // ✅ Added missing cancel button locator
+    private By cancelBtn = By.id("cancel");  
     private By errorMsg = By.id("error");
     private By toastMessage = By.className("toast-message");
 
