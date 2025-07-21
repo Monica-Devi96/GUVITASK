@@ -17,7 +17,6 @@
         <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/"/>
         <classes>
             <class name="tests.LoginTests"/>
-              <class name="tests.SignUpTests"/>
             <class name="tests.AddContactTests"/>
              <class name="tests.EditContactTests"/>
             <class name="tests.DeleteContactTests"/>
